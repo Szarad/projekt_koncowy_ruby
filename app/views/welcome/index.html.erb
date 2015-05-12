@@ -1,1 +1,8 @@
-<h1>Hello, Rails!</h1>
+
+<% if !@projects.blank? %>
+<% for item in @projects %>
+<% item.name %> <% item.description %> <br/>
+<%end %>
+<% else %>
+<%end %>
+
